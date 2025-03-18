@@ -15,13 +15,14 @@ export const supabaseServer = () => {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Ignore les erreurs côté serveur
+            // Ignore l'erreur si les cookies ne peuvent pas être définis
           }
         },
       },
     }
   );
 };
+
 
 
 
