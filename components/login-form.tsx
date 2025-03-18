@@ -8,7 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { createBrowserClient } from "@/lib/supabase-client"
+import { createClient } from "@/lib/supabase-client";
 import { Dog } from "lucide-react"
 import { useTranslation } from "@/hooks/use-translation"
 import { motion } from "framer-motion"
