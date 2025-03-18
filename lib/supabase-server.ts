@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
-export const supabaseServer = () => {
+export const createServerSupabaseClient = () => {
   const cookieStore = cookies();
   return createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -15,13 +15,14 @@ export const supabaseServer = () => {
               cookieStore.set(name, value, options)
             );
           } catch {
-            // Ignore l'erreur si les cookies ne peuvent pas être définis
+            // Ignorer l'erreur si les cookies ne peuvent pas être définis
           }
         },
       },
     }
   );
 };
+
 
 
 
