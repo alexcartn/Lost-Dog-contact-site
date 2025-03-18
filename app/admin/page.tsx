@@ -1,4 +1,4 @@
-import { supabaseServer } from "@/lib/supabase-server";
+import { createServerSupabaseClient } from "@/lib/supabase-server";
 
 export default async function AdminPage() {
   const supabase = supabaseServer();
