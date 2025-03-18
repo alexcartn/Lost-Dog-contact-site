@@ -20,7 +20,7 @@ export default function SetupPage() {
     setSuccess(null)
 
     try {
-      const supabase = createBrowserClient()
+      const supabase = 	createClient()
 
       // 1. Vérifier si la table existe déjà
       const { error: checkError } = await supabase.from("dog_profiles").select("count").limit(1)
