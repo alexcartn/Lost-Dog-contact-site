@@ -7,7 +7,7 @@ const supabase = createServerSupabaseClient();
 
 export async function POST() {
   try {
-    const supabase = createServerClient()
+    const supabase = createServerSupabaseClient();
 
     // Créer la fonction RPC pour créer la table
     const { error: rpcError } = await supabase.rpc("create_function", {
