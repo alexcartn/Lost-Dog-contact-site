@@ -20,7 +20,7 @@ export async function GET() {
     }
 
     // Créer le client Supabase
-    const supabase = supabaseServer();
+    const supabase = createServerSupabaseClient();
 
     // Vérifier si la table "dog_profiles" existe
     const { data: tableCheck, error: tableError } = await supabase
